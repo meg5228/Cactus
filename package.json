@@ -1,0 +1,31 @@
+{
+  "name": "Cactus",
+  "version": "1.0.0",
+  "description": "A Discord bot that is the embodiment of \"0 days since last work accident\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meg5228/Cactus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meg5228/Cactus/issues"
+  },
+  "homepage": "https://github.com/meg5228/Cactus#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "discord.js": "^11.5.1",
+    "klaw": "^3.0.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
