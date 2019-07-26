@@ -1,4 +1,4 @@
-// eslint-disable-file no-console
+/* eslint-disable no-console */
 /*
 Logger class for easy and aesthetically pleasing console logging
 */

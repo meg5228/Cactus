@@ -10,9 +10,8 @@ class Ping extends Command {
     });
   }
 
-  async run(message, args, level) { // eslint-disable-line no-unused-vars
+  async run(message, args) { // eslint-disable-line no-unused-vars
     try {
-      console.log('weewoo2');
       const m = await message.channel.send('Ping?');
       m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(this.client.ping)}ms`);
     } catch (e) {

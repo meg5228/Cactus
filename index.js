@@ -101,6 +101,11 @@ client.on('disconnect', () => client.logger.warn('Bot is disconnecting...'))
   .on('error', e => client.logger.error(e))
   .on('warn', info => client.logger.warn(info));
 
+
+String.prototype.toProperCase = function () {
+  return this.replace(/([^\W_]+[^\s-]*) */g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
+};
+
 process.on('uncaughtException', (err) => {
   const errorMsg = err.stack.replace(new RegExp(`${__dirname}/`, 'g'), './');
   console.error('Uncaught Exception: ', errorMsg);
